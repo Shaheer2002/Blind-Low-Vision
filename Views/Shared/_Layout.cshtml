@@ -13,11 +13,19 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
+                <img src="~/images/logo.jpg" class="img-fluid" alt="Responsive image" >
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AuthSystem</a>
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                </div>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                   <partial name="_LoginPartial.cshtml" />
+                    <partial name="_LoginPartial.cshtml" />
                 </div>
             </div>
+            
         </nav>
     </header>
     <div class="container">
