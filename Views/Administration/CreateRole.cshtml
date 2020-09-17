@@ -1,0 +1,22 @@
+﻿@model AuthSystem.Views.CreateRoleViewModel
+
+@{
+    ViewBag.Title = "Create New Role";
+}
+
+<form method="post">
+    <div class="card">
+        <div class="card-header">
+            <h1>Create Role</h1>
+        </div>
+        <div class="form-group card-header">
+            <label asp-for="RoleName"></label>
+            <input asp-for="RoleName" class="form-control" />
+            <span asp-validation-for="RoleName" class="text-danger"></span>
+        </div>
+        <div class="card-footer">
+            <div class="form-group"></div>
+            <button style="width:auto" type="submit" class="btn btn-primary">Create Role</button>
+        </div>
+    </div>
+</form>
