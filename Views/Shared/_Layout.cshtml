@@ -8,26 +8,32 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" rel="stylesheet">
+
+  
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <img src="~/images/logo.jpg" class="img-fluid" alt="Responsive image" >
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AuthSystem</a>
+                <a href="@Url.Action("Index","Home")" class="w3-bar-item w3-button w3-wide"><img src="~/images/logo.jpg" class="imglogo"style="width:317.45px; height:106.91px;" ></a>
+                
                 <div class="container">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                 </div>
                 <div class="container">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="About">About</a>
                 </div>
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Donation">Donation</a>
+                </div>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial.cshtml" />
                 </div>
             </div>
-            
+
         </nav>
     </header>
+    <!--style="width:317.45px; height:106.91px;"-->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

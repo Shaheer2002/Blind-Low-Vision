@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace AuthSystem.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+   // [Authorize(Roles = "Administrator")]
     public class AdministrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;
