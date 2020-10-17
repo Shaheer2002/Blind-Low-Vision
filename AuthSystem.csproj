@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="C:\Users\ac106722\OneDrive - Avondale College\NCEA IT\Blind And LOW\AuthSystem\_LoginPartial.cshtml" Link="_LoginPartial.cshtml" />
+  
+    <Content Include="C:\Users\Shaheer\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
