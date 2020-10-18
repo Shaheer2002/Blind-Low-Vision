@@ -15,16 +15,16 @@
                     <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
                 </form>
             </li>
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Donation">Donation</a>
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Donation">Donation</a>
 
         }
         else
         {
-            <li class="nav-item">
-                <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            <li class="nav-item active">
+                <a class="nav-link" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            <li class="nav-item active">
+                <a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
             </li>
 
         }
