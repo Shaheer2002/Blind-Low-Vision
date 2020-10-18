@@ -13,39 +13,72 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a href="@Url.Action("Index","Home")" class="w3-bar-item w3-button w3-wide"><img src="~/images/logo.jpg" class="imglogo"style="width:317.45px; height:106.91px;" ></a>
-                
+                <a href="@Url.Action("Index","Home")" class="w3-bar-item w3-button w3-wide"><img src="~/images/logo.jpg" class="imglogo" style="width:317.45px; height:106.91px;"></a>
+
                 <div class="container">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                 </div>
                 <div class="container">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="About">About</a>
                 </div>
-            
+
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial.cshtml" />
                 </div>
             </div>
 
+        </nav> -->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="@Url.Action("Index","Home")" class="w3-bar-item w3-button w3-wide"><img src="~/images/logo.jpg" class="imglogo" style="width:317.45px; height:106.91px;"></a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="container">
+                                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="container">
+                                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="container">
+                                <partial name="_LoginPartial.cshtml" />
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <br>
     </header>
     <!--style="width:317.45px; height:106.91px;"-->
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+                                <div class="container">
+                                    <main role="main" class="m-5 pb-3 ">
+                                        @RenderBody()
+                                    </main>
+                                </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - AuthSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+                                <footer class="border-top footer text-muted">
+                                    <div class="container">
+                                        &copy; 2020 - AuthSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                                    </div>
+                                </footer>
+                                <script src="~/lib/jquery/dist/jquery.min.js"></script>
+                                <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                                <script src="~/js/site.js" asp-append-version="true"></script>
+                                @RenderSection("Scripts", required: false)
 </body>
 </html>
