@@ -8,6 +8,14 @@ a.navbar-brand {
 
 }
 
+.entry-header {
+    background-color: #ff9729;
+    background-clip: content-box;
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 2rem;
+}
+
 /*.navbar-brand{
     margin: 0;
     padding: 0;
