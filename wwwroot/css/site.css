@@ -9,7 +9,7 @@ a.navbar-brand {
 }
 
 .entry-header {
-    background-color: #ff9729;
+    background-color: #ff3333;
     background-clip: content-box;
     text-align: center;
     padding-right: 0px;
@@ -51,7 +51,15 @@ hp {
     margin: 0;
     font: 14px Sans-Serif;
 }
-
+hc {
+    position: center;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 4px 8px;
+    color: white;
+    margin: 0;
+    font: 40px Sans-Serif;
+}
 p1 {
     background: rgba(197, 192, 186, 0.48);
     color: black;
@@ -60,6 +68,10 @@ p2 {
    
     font: 20px Verdana;
     color: orangered;
+}
+p3 {
+    font: 15px Verdana;
+    color: white;
 }
 /* Provide sufficient contrast against white background */
 a {
