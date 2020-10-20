@@ -5,7 +5,6 @@ a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
-
 }
 
 .entry-header {
@@ -16,29 +15,6 @@ a.navbar-brand {
     padding-bottom: 2rem;
 }
 
-/*.navbar-brand{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-}
-.navbar-brand li{
-    display: inline-block;
-}
-.navbar-brand a{
-    color: #fff;
-    display: inline-block;
-    padding: 0.5em 0.75em;
-    background-color: #666;
-    border-radius: 4px;
-    text-decoration: none;
-}
-.navbar-brand a:hover{
-    background-color: #000;
-}
-.navbar-brand .current {
-    background-color: orangered;
-}*/
 
 /* changing heading 4 font + Creating new p1 font */
 hp {
@@ -67,28 +43,27 @@ p1 {
 p2 {
    
     font: 20px Verdana;
-    color: orangered;
+    color: coral;
 }
 p3 {
     font: 15px Verdana;
     color: white;
 }
+
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #0366d6;
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+a:hover {
+        background-color: lightgrey;
+      
+    }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
