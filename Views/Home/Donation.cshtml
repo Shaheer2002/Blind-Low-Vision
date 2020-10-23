@@ -50,14 +50,19 @@
                     <label for="owner">Owner</label>
                     <input type="text" class="form-control" id="owner">
                 </div>
-                <div class="form-group CVV">
-                    <label for="cvv">Amount</label>
-                    <input type="text" class="form-control" id="cvv">
+                <div class="form-group" id="Donation-Amount">
+                    <label for="Donation-Amount">Donation Amount</label>
+                    <input type="text" class="form-control" id="Donation-Amount">
                 </div>
                 <div class="form-group" id="card-number-field">
                     <label for="cardNumber">Card Number</label>
                     <input type="text" class="form-control" id="cardNumber">
                 </div>
+                <div class="form-group CVV">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv">
+                </div>
+
                 <div class="form-group" id="expiration-date">
                     <label>Expiration Date</label>
                     <select>
@@ -86,7 +91,7 @@
                 <div class="form-group" id="credit_cards">
                     <img class="img-fluid" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
                 </div>
-                <div class="form-group" id="pay-now">  
+                <div class="form-group" id="pay-now">
                     <a class="btn btn-default" asp-area="" asp-controller="Home" asp-action="billing">Confirm</a>
                 </div>
             </form>
