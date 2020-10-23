@@ -19,13 +19,16 @@ namespace AuthSystem.Models
         [Display(Name = " Amount :")]
         public string PAmount { get; set; }
 
+
         [Required(ErrorMessage = "Enter Card Number")]
         [Display(Name = " CardNumber :")]
         public string PCardNumber { get; set; }
 
+
         [Required(ErrorMessage = "Enter CVV")]
         [Display(Name = " CVV :")]
         public string PCVV { get; set; }
+
 
         [Required(ErrorMessage = "Enter Expiration Date")]
         [Display(Name = " ExpirationDate :")]
