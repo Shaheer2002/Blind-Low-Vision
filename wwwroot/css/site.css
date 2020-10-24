@@ -8,7 +8,7 @@ a.navbar-brand {
 }
 
 .entry-header {
-    background-color: #ff3333;
+    background-color: #F26E36;
     background-clip: content-box;
     text-align: center;
     padding-right: 0px;
@@ -25,17 +25,17 @@ hp {
     padding: 4px 8px;
     color: white;
     margin: 0;
-    font: 16px Arial bold;
+    font: 16px Arial;
 }
 
 hc {
     position: center;
-    right: 10px;
     background: rgba(0, 0, 0, 0.75);
     padding: 4px 8px;
     color: white;
     margin: 0;
-    font: 40px Arial bold;
+    font: 40px Arial;
+    font-weight: bold;
 }
 p1 {
     background: rgba(197, 192, 186, 0.48);
@@ -54,7 +54,7 @@ p3 {
 
 /* Provide sufficient contrast against white background */
 a {
-    color: #0366d6;
+    color: #000000;
     display: inline-block;
     padding: 0.5em 0.75em;
     border-radius: 4px;
@@ -214,7 +214,7 @@ div.login-form-icon{
         width: 100%;
         margin-top: 3px;
         font-size: 24px;
-        background-color: #2ec4a5;
+        background-color: #F26E36;
         color: white;
     }
 
