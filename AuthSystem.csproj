@@ -11,8 +11,8 @@
 
   <ItemGroup>
   
-   <Content Include="C:\Users\ac106722\OneDrive - Avondale College\NCEA IT\Blind And LOW\AuthSystem\_LoginPartial.cshtml" Link="_LoginPartial.cshtml" /> 
-  <!--     <Content Include="C:\Users\ac106722\Source\Repos\Shaheer2002\AuthSystem\Views" -->
+     <!--<Content Include="C:\Users\ac106722\OneDrive - Avondale College\NCEA IT\Blind And LOW\AuthSystem\_LoginPartial.cshtml" Link="_LoginPartial.cshtml" />  -->
+     <Content Include="C:\Users\Shaheer\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />
      
      </ItemGroup>
 

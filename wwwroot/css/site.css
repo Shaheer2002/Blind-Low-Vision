@@ -16,7 +16,7 @@ a.navbar-brand {
 }
 
 
-/* changing heading 4 font + Creating new p1 font */
+/* Custom fonts (headingas & paragraph stles)*/
 hp {
     position: absolute;
     bottom: 10px;
@@ -25,8 +25,9 @@ hp {
     padding: 4px 8px;
     color: white;
     margin: 0;
-    font: 14px Sans-Serif;
+    font: 16px Arial bold;
 }
+
 hc {
     position: center;
     right: 10px;
@@ -34,21 +35,22 @@ hc {
     padding: 4px 8px;
     color: white;
     margin: 0;
-    font: 40px Sans-Serif;
+    font: 40px Arial bold;
 }
 p1 {
     background: rgba(197, 192, 186, 0.48);
     color: black;
+    font: 16px Arial Regular;
 }
 p2 {
-   
-    font: 20px Verdana;
-    color: coral;
+    font: 22px Arial Regular;
+    color: #F26E36;
 }
 p3 {
-    font: 15px Verdana;
+    font: 16px Arial Regular;
     color: white;
 }
+
 
 /* Provide sufficient contrast against white background */
 a {
@@ -59,9 +61,9 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-        background-color: lightgrey;
-      
+    a:hover {
+        background-color: #C9C0B8;
+        font-weight: bold;
     }
 
 
@@ -100,9 +102,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  font-family: "Roboto", sans-serif;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: 16px Arial Regular;
 }
 .footer {
   position: absolute;
