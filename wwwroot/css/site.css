@@ -37,6 +37,14 @@ hc {
     font: 40px Arial;
     font-weight: bold;
 }
+hb {
+    padding: 4px 8px;
+    margin: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    font: 40px Arial;
+    font-weight: bold;
+}
 p1 {
     background: rgba(197, 192, 186, 0.48);
     color: black;
