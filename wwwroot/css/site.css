@@ -14,8 +14,10 @@ a.navbar-brand {
     padding-right: 0px;
     padding-bottom: 2rem;
 }
-
-
+.btn-orange:hover {
+    border-color: #F26E36;
+    background: #F26E36;
+}
 /* Custom fonts (headingas & paragraph stles)*/
 hp {
     position: absolute;
