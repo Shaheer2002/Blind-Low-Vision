@@ -10,11 +10,13 @@
   </ItemGroup>
 
   <ItemGroup>
-  
-     <!--<Content Include="C:\Users\ac106722\OneDrive - Avondale College\NCEA IT\Blind And LOW\AuthSystem\_LoginPartial.cshtml" Link="_LoginPartial.cshtml" />  -->
-     <Content Include="C:\Users\Shaheer\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />
-     
-     </ItemGroup>
+<!--This is for school pc (all information can be accessed in school and works properly)-->
+    <!--<Content Include="C:\Users\ac106722\OneDrive - Avondale College\NCEA IT\Blind And LOW\AuthSystem\_LoginPartial.cshtml" Link="_LoginPartial.cshtml" /> -->
+    <!--This is for home pc (cannot access information after signing in-->
+     <!--<Content Include="C:\Users\Shaheer\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />-->
+    <!--This is for remote school pc (can access information after signing in but html and css files are messed up)-->
+    <Content Include="C:\Users\ac106722\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
