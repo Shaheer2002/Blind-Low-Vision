@@ -1,7 +1,6 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model AuthSystem.Models.Donation
 @{
+    ViewData["Title"] = "Donation";
 }
     <header class="entry-header">
         <div class="row">
@@ -47,25 +46,29 @@
         <div class="payment">
             <form>
                 <div class="form-group owner">
-                    <label for="owner">Owner</label>
-                    <input type="text" class="form-control" id="owner">
+                    <label asp-for="Owner" class="control-label">Owner</label>
+                    <input asp-for="Owner" class="form-control" id="owner" />
+                    <span asp-validation-for="Owner" class="text-danger"></span>
                 </div>
                 <div class="form-group" id="Donation-Amount">
-                    <label for="Donation-Amount">Donation Amount</label>
-                    <input type="text" class="form-control" id="Donation-Amount">
+                    <label asp-for="Amount" class="control-label">Donation Amount</label>
+                    <input asp-for="Amount" class="form-control" id="Donation-Amount" />
+                    <span asp-validation-for="Amount" class="text-danger"></span>
                 </div>
                 <div class="form-group" id="card-number-field">
-                    <label for="cardNumber">Card Number</label>
-                    <input type="text" class="form-control" id="cardNumber">
+                    <label asp-for="CardNumber" class="control-label">Card Number</label>
+                    <input asp-for="CardNumber" class="form-control" id="cardNumber" />
+                    <span asp-validation-for="CardNumber" class="text-danger"></span>
                 </div>
                 <div class="form-group CVV">
-                    <label for="cvv">CVV</label>
-                    <input type="text" class="form-control" id="cvv">
+                    <label asp-for="CVV" class="control-label">CVV</label>
+                    <input asp-for="CVV" class="form-control" id="cvv" />
+                    <span asp-validation-for="CVV" class="text-danger"></span>
                 </div>
 
                 <div class="form-group" id="expiration-date">
-                    <label>Expiration Date</label>
-                    <select>
+                    <label asp-for="ExpirationDate" class="control-label">Expiration Date</label>
+                    <select asp-for="ExpirationDate">
                         <option value="01">January</option>
                         <option value="02">February </option>
                         <option value="03">March</option>
@@ -79,7 +82,7 @@
                         <option value="11">November</option>
                         <option value="12">December</option>
                     </select>
-                    <select>
+                    <select asp-for="ExpirationDate">
                         <option value="16"> 2016</option>
                         <option value="17"> 2017</option>
                         <option value="18"> 2018</option>
@@ -87,6 +90,7 @@
                         <option value="20"> 2020</option>
                         <option value="21"> 2021</option>
                     </select>
+                    <span asp-validation-for="ExpirationDate" class="text-danger"></span>
                 </div>
                 <div class="form-group" id="credit_cards">
                     <img class="img-fluid" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
@@ -94,6 +98,7 @@
                 <div class="form-group" id="pay-now">
                     <a class="btn btn-default" asp-area="" asp-controller="Home" asp-action="billing">Confirm</a>
                 </div>
+                <b>@ViewData["Message"]</b>
             </form>
         </div>
     </div>
