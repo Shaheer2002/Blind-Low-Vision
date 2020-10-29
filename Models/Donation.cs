@@ -12,27 +12,27 @@ namespace AuthSystem.Models
         public int ID { get; set; }
         [Required(ErrorMessage = "Enter Name")]
         [Display (Name = " Name :")]
-        public string PName { get; set; }
+        public string Owner { get; set; }
 
 
         [Required(ErrorMessage = "Enter Amount")]
         [Display(Name = " Amount :")]
-        public string PAmount { get; set; }
+        public string Amount { get; set; }
 
 
         [Required(ErrorMessage = "Enter Card Number")]
         [Display(Name = " CardNumber :")]
-        public string PCardNumber { get; set; }
+        public string CardNumber { get; set; }
 
 
         [Required(ErrorMessage = "Enter CVV")]
         [Display(Name = " CVV :")]
-        public string PCVV { get; set; }
+        public string CVV { get; set; }
 
 
         [Required(ErrorMessage = "Enter Expiration Date")]
         [Display(Name = " ExpirationDate :")]
-        public string PExpirationDate { get; set; }
+        public string ExpirationDate { get; set; }
         
     }
 }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AuthSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Data.SqlClient;
 
 namespace AuthSystem.Controllers
 {
@@ -47,6 +48,23 @@ namespace AuthSystem.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Donation(Donation ur)
+        {
+            string connection = "Server=tpisql01.avcol.school.nz ; Database=MVCAuthDB-Shaheer;Trusted_Connection=True;MultipleActiveResultSets=true";
+
+
+                using (SqlConnection sqlconn = new SqlConnection(connection))
+                {
+                 string sqlquery = "insert into Donation Table(Owner,Amount,CardNumber,ExpirationDate) values ('" + ur.Owner + "','" + ur.Amount + "','" + ur.CardNumber + "','" + ur.ExpirationDate + "')";
+                 using (SqlCommand sqlcomm = new SqlCommand(sqlquery,sqlconn))
+                  {
+  
+                  }
+                }
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

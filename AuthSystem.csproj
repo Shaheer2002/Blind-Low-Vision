@@ -14,7 +14,7 @@
     <!--<Content Include="C:\Users\ac106722\OneDrive - Avondale College\NCEA IT\Blind And LOW\AuthSystem\_LoginPartial.cshtml" Link="_LoginPartial.cshtml" /> -->
     <!--This is for home pc (cannot access information after signing in-->
      <!--<Content Include="C:\Users\Shaheer\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />-->
-    <!--This is for remote school pc (can access information after signing in but html and css files are messed up)-->
+    <!--This is for remote school pc + school pc df (can access information after signing in but html and css files are messed up)-->
     <Content Include="C:\Users\ac106722\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />
   </ItemGroup>
 
@@ -26,7 +26,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
 
