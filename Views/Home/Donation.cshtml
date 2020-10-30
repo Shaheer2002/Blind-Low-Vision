@@ -44,7 +44,8 @@
             <h1>Confirm Purchase</h1>
         </div>
         <div class="payment">
-            <form>
+            <form asp-action="Donation">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group owner">
                     <label asp-for="Owner" class="control-label">Owner</label>
                     <input asp-for="Owner" class="form-control" id="owner" />
@@ -96,10 +97,11 @@
                     <img class="img-fluid" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
                 </div>
                 <div class="form-group" id="pay-now">
-                    <a class="btn btn-default" asp-area="" asp-controller="Home" asp-action="billing">Confirm</a>
+                    <input type="submit" value="Confirm" class="btn btn-primary" />
                 </div>
-                <b>@ViewData["Message"]</b>
+
             </form>
+            <b>@ViewData["Message"]</b>
         </div>
     </div>
 
