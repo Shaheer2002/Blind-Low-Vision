@@ -15,7 +15,7 @@
     <!--This is for home pc (cannot access information after signing in-->
      <!--<Content Include="C:\Users\Shaheer\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />-->
     <!--This is for remote school pc + school pc df (can access information after signing in but html and css files are messed up)-->
-    <Content Include="C:\Users\ac106722\source\repos\Shaheer2002\AuthSystem\Views\Shared" Link="_LoginPartial.cshtml" />
+    <Content Include="C:\Users\ac106722\source\repos\Shaheer2002\Blind-Low-Vision\Views\Shared" Link="_LoginPartial.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
