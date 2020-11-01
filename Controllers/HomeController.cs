@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AuthSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Data.SqlClient;
+using Microsoft.Data;
 
 namespace AuthSystem.Controllers
 {
@@ -33,6 +35,40 @@ namespace AuthSystem.Controllers
         {
             return View();
         }
+
+        public IActionResult Donation()
+        {
+            return View();
+        }
+
+        public IActionResult billing()
+        {
+            return View();
+        }
+        public IActionResult Challenge()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Donation(Donation ur)
+        {
+            string connection = "Server=tpisql01.avcol.school.nz ; Database=MVCAuthDB-Shaheer; Trusted_Connection=True;  MultipleActiveResultSets=true";
+
+
+               using (SqlConnection sqlconn = new SqlConnection(connection))
+                {
+                 string sqlquery = "insert into [dbo].[DonationTable](Owner,Amount,CardNumber,CVV,ExpirationDate) values ('" + ur.Owner + "','" + ur.Amount + "','" + ur.CardNumber + "','" + ur.CVV + "','"+ ur.ExpirationDate + "')";
+                 using (SqlCommand sqlcomm = new SqlCommand(sqlquery,sqlconn))
+                   {
+                    sqlconn.Open();
+                    sqlcomm.ExecuteNonQuery();
+                    ViewData["Message"] = "The New Owner " + ur.Owner + " is saved successfully..! ";
+                    return View(ur);
+                   }
+                }
+            
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

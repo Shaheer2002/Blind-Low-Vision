@@ -2,27 +2,80 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
+
+.entry-header {
+    background-color: #F26E36;
+    background-clip: content-box;
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 2rem;
+}
+.btn-orange:hover {
+    border-color: #F26E36;
+    background: #F26E36;
+}
+/* Custom fonts (headingas & paragraph stles)*/
+hp {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 4px 8px;
+    color: white;
+    margin: 0;
+    font: 16px Arial;
+}
+
+hc {
+    position: center;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 4px 8px;
+    color: white;
+    margin: 0;
+    font: 40px Arial;
+    font-weight: bold;
+}
+hb {
+    padding: 4px 8px;
+    margin: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    font: 40px Arial;
+    font-weight: bold;
+}
+p1 {
+    background: rgba(197, 192, 186, 0.48);
+    color: black;
+    font: 16px Arial Regular;
+}
+p2 {
+    font: 22px Arial Regular;
+    color: #F26E36;
+}
+p3 {
+    font: 16px Arial Regular;
+    color: white;
+}
+
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #000000;
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+    a:hover {
+        background-color: #C9C0B8;
+        font-weight: bold;
+    }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -59,9 +112,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  font-family: "Roboto", sans-serif;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: 16px Arial Regular;
 }
 .footer {
   position: absolute;
@@ -98,3 +151,116 @@ div.card-content{
 div.login-form-icon{
     text-align:center;
 }
+
+/*Donation Page Credit card form*/
+.creditCardForm {
+    max-width: 700px;
+    background-color: #fff;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 25px;
+    color: #4c4e56;
+}
+
+    .creditCardForm label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .creditCardForm .heading h1 {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        color: #4c4e56;
+    }
+
+    .creditCardForm .payment {
+        float: left;
+        font-size: 18px;
+        padding: 10px 25px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+        .creditCardForm .payment .form-group {
+            float: left;
+            margin-bottom: 15px;
+        }
+
+        .creditCardForm .payment .form-control {
+            line-height: 40px;
+            height: auto;
+            padding: 0 16px;
+        }
+
+    .creditCardForm .owner {
+        width: 63%;
+        margin-right: 10px;
+    }
+
+    .creditCardForm .CVV {
+        width: 35%;
+    }
+
+    .creditCardForm #card-number-field {
+        width: 100%;
+    }
+
+    .creditCardForm #expiration-date {
+        width: 49%;
+    }
+
+    .creditCardForm #credit_cards {
+        width: 50%;
+        margin-top: 25px;
+        text-align: right;
+    }
+
+    .creditCardForm #pay-now {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .creditCardForm .payment .btn {
+        width: 100%;
+        margin-top: 3px;
+        font-size: 24px;
+        background-color: #F26E36;
+        color: white;
+    }
+
+    .creditCardForm .payment select {
+        padding: 10px;
+        margin-right: 15px;
+    }
+
+.transparent {
+    opacity: 0.2;
+}
+
+@media(max-width: 650px) {
+    .creditCardForm .owner,
+    .creditCardForm .CVV,
+    .creditCardForm #expiration-date,
+    .creditCardForm #credit_cards {
+        width: 100%;
+    }
+
+    .creditCardForm #credit_cards {
+        text-align: left;
+    }
+}
+/*About Page Video*/
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }

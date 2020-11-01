@@ -29,8 +29,8 @@ namespace AuthSystem
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddIdentityCore<ApplicationUser>().AddRoles<IdentityRole>().AddEntityFrameworkStores<Data.AuthDbContext>();
-           // services.AddIdentity<IdentityUser, IdentityRole>()
-        //.AddEntityFrameworkStores<AuthDbContext>();
+            // services.AddIdentity<IdentityUser, IdentityRole>()
+            //.AddEntityFrameworkStores<AuthDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

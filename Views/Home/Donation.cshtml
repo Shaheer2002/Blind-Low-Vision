@@ -1,0 +1,114 @@
+﻿@model AuthSystem.Models.Donation
+@{
+    ViewData["Title"] = "Donation";
+}
+    <header class="entry-header">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <hc>Donate Now</hc><br/>
+                    <hp>Make an online donation to Blind Low Vision NZ</hp>
+                    <p3>Every day, an average of seven New Zealanders turn to the Blind Low Vision NZ for support with sight loss.</p3><br/>
+                    <p3>Your donation will help provide practical and emotional support to ensure that when someone loses their sight, they won't lose their freedom and independence. Thank you!<p>
+                </div>
+            </div>
+            <div class="jumbotron-fluid col-md-8">
+                <div class="container">
+                    <img src="~/images/AG9I1268.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Card Validation Demo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+</head>
+
+<body>
+
+    <!-- The HTML for our form will go here -->
+    <div class="creditCardForm">
+        <div class="heading">
+            <h1>Confirm Purchase</h1>
+        </div>
+        <div class="payment">
+            <form asp-action="Donation">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group owner">
+                    <label asp-for="Owner" class="control-label">Owner</label>
+                    <input asp-for="Owner" class="form-control" id="owner" />
+                    <span asp-validation-for="Owner" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="Donation-Amount">
+                    <label asp-for="Amount" class="control-label">Donation Amount</label>
+                    <input asp-for="Amount" class="form-control" id="Donation-Amount" />
+                    <span asp-validation-for="Amount" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="card-number-field">
+                    <label asp-for="CardNumber" class="control-label">Card Number</label>
+                    <input asp-for="CardNumber" class="form-control" id="cardNumber" />
+                    <span asp-validation-for="CardNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group CVV">
+                    <label asp-for="CVV" class="control-label">CVV</label>
+                    <input asp-for="CVV" class="form-control" id="cvv" />
+                    <span asp-validation-for="CVV" class="text-danger"></span>
+                </div>
+
+                <div class="form-group" id="expiration-date">
+                    <label asp-for="ExpirationDate" class="control-label">Expiration Date</label>
+                    <select asp-for="ExpirationDate">
+                        <option value="01">January</option>
+                        <option value="02">February </option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select asp-for="ExpirationDate">
+                        <option value="16"> 2016</option>
+                        <option value="17"> 2017</option>
+                        <option value="18"> 2018</option>
+                        <option value="19"> 2019</option>
+                        <option value="20"> 2020</option>
+                        <option value="21"> 2021</option>
+                    </select>
+                    <span asp-validation-for="ExpirationDate" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="credit_cards">
+                    <img class="img-fluid" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                </div>
+                <div class="form-group" id="pay-now">
+                    <input type="submit" value="Confirm" class="btn btn-primary" />
+                </div>
+
+            </form>
+            <b>@ViewData["Message"]</b>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/jquery.payform.min.js" charset="utf-8"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
