@@ -16,50 +16,52 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="span8">
-                    <form action="billing" method="post" class="form-horizontal" id="billingform" accept-charset="utf-8">
+                    <form asp-action="Fundraising" method="post" class="form-horizontal" id="billingform" accept-charset="utf-8">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="control-group">
-                            <label for="email" class="control-label">
+                            <label asp-for="email" class="control-label">
                                 Billing E-Mail
                             </label>
                             <div class="controls">
-                                <input name="email" type="email" value="" id="email">
+                                <input asp-for="email" type="email" value="" id="email">
                                 <span class="help-inline">  Where should we send invoices?</span>
                             </div>
                         </div>
 
                         <div class="control-group">
-                            <label for="address" class="control-label">
+                            <label asp-for="address" class="control-label">
                                 Street Address
                             </label>
                             <div class="controls">
-                                <input name="address" placeholder="W 123 Street" type="text" value="" id="address"><span class="help-inline">  Street Name and/or apartment number</span>
+                                <input asp-for="address" placeholder="W 123 Street" type="text" value="" id="address"><span class="help-inline">  Street Name and/or apartment number</span>
+
                             </div>
                         </div>
 
                         <div class="control-group">
-                            <label for="zip" class="control-label">
+                            <label asp-for="zip" class="control-label">
                                 Zip Code
                             </label>
                             <div class="controls">
-                                <input name="zip" type="text" value="" id="zip">
+                                <input asp-for="zip" type="text" value="" id="zip">
                             </div>
                         </div>
 
                         <div class="control-group">
-                            <label for="city" class="control-label">
+                            <label asp-for="city" class="control-label">
                                 City
                             </label>
                             <div class="controls">
-                                <input name="city" type="text" value="" id="city">
+                                <input asp-for="city" type="text" value="" id="city">
                             </div>
                         </div>
 
                         <div class="control-group">
-                            <label for="country" class="control-label">
+                            <label asp-for="country" class="control-label">
                                 Country
                             </label>
                             <div class="controls">
-                                <select name="country" id="country">
+                                <select asp-for="country" id="country">
                                     <option value=""></option>
                                     <option value="AR">Argentina</option>
                                     <option value="AU">Australia</option>
@@ -156,8 +158,8 @@
                             </div>
                         </div>
 
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-large btn-primary">Save Billing Address</button>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Save Details</button>
                         </div>
                         <div class="jumbotron-fluid col-md-8">
                             <div class="container">
