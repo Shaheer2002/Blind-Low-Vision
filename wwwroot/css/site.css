@@ -204,7 +204,27 @@ div.login-form-icon{
     .creditCardForm #card-number-field {
         width: 100%;
     }
-
+    .creditCardForm .Name {
+        width: 100%;
+    }
+    .creditCardForm .email {
+        width: 100%;
+    }
+    .creditCardForm .Program {
+        width: 100%;
+    }
+    .creditCardForm .address {
+        width: 100%;
+    }
+    .creditCardForm .zip {
+        width: 100%;
+    }
+    .creditCardForm .city {
+        width: 100%;
+    }
+    .creditCardForm #country {
+        width: 100%;
+    }
     .creditCardForm #expiration-date {
         width: 49%;
     }
