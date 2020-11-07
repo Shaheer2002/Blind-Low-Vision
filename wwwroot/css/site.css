@@ -192,24 +192,32 @@ div.login-form-icon{
             padding: 0 16px;
         }
 
-    .creditCardForm .owner {
+    .creditCardForm .Owner {
         width: 63%;
         margin-right: 10px;
+    }
+
+    .creditCardForm .Amount {
+        width: 30%;
     }
 
     .creditCardForm .CVV {
         width: 35%;
     }
-
+/* hashtag # for id's*/
     .creditCardForm #card-number-field {
         width: 100%;
+    }
+
+    .creditCardForm #expiration-date {
+        width: 49%;
     }
 
     .creditCardForm .Name {
         width: 100%;
     }
 
-    .creditCardForm .email {
+    .creditCardForm .Email {
         width: 100%;
     }
 
@@ -217,24 +225,23 @@ div.login-form-icon{
         width: 100%;
     }
 
-    .creditCardForm .address {
+    .creditCardForm .Address {
         width: 100%;
     }
 
-    .creditCardForm .zip {
-        width: 100%;
-    }
-    .creditCardForm .city {
+    .creditCardForm .Zip {
         width: 100%;
     }
 
-    .creditCardForm #country {
+    .creditCardForm .City {
         width: 100%;
     }
 
-    .creditCardForm #expiration-date {
-        width: 49%;
+    .creditCardForm .Country {
+        width: 100%;
     }
+
+
 
     .creditCardForm #credit_cards {
         width: 50%;
@@ -265,10 +272,18 @@ div.login-form-icon{
 }
 
 @media(max-width: 650px) {
-    .creditCardForm .owner,
+    .creditCardForm .Owner,
+    .creditCardForm .Amount,
     .creditCardForm .CVV,
     .creditCardForm #expiration-date,
-    .creditCardForm #credit_cards {
+    .creditCardForm #credit_cards,
+    .creditCardForm .Name,
+    .creditCardForm .Email,
+    .creditCardForm .Program,
+    .creditCardForm .Address,
+    .creditCardForm .City,
+    .creditCardForm .Country,
+    .creditCardForm .Zip {
         width: 100%;
     }
 

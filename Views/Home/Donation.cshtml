@@ -46,12 +46,12 @@
         <div class="payment">
             <form asp-action="Donation">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group owner">
+                <div class="form-group Owner">
                     <label asp-for="Owner" class="control-label">Owner</label>
                     <input asp-for="Owner" class="form-control" id="owner" />
                     <span asp-validation-for="Owner" class="text-danger"></span>
                 </div>
-                <div class="form-group" id="Donation-Amount">
+                <div class="form-group Amount" >
                     <label asp-for="Amount" class="control-label">Donation Amount</label>
                     <input asp-for="Amount" class="form-control" id="Donation-Amount" />
                     <span asp-validation-for="Amount" class="text-danger"></span>
