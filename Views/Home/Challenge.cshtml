@@ -44,44 +44,44 @@
                         <div class="payment">
                             <form asp-action="Challenge">
                                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                <div class="form-group owner">
+                                <div class="form-group Name">
                                     <label asp-for="Name" class="control-label">Name</label>
-                                    <input asp-for="Name" class="form-control" id="owner" />
+                                    <input asp-for="Name" class="form-control" id="name" />
                                     <span asp-validation-for="Name" class="text-danger"></span>
                                 </div>
-                                <div class="form-group owner">
+                                <div class="form-group Program">
                                     <label asp-for="Program" class="control-label">Fundraising Program</label>
-                                    <input asp-for="Program" class="form-control" id="owner" />
+                                    <input asp-for="Program" class="form-control" id="program" />
                                     <span asp-validation-for="Program" class="text-danger"></span>
                                 </div>
-                                <div class="form-group owner">
-                                    <label asp-for="email" class="control-label">
+                                <div class="form-group email">
+                                    <label asp-for="Email" class="control-label">
                                         Billing E-Mail
                                     </label>
-                                    <input asp-for="email" type="email" value="" id="email" class="form-control" />
-                                    <span asp-validation-for="email" class="text-danger"></span>
+                                    <input asp-for="Email" type="email" value="" id="email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
                                     <span class="help-inline">  Where should we send invoices?</span>
                                 </div>
-                                <div class="form-group" id="Donation-Amount">
-                                    <label asp-for="address" class="control-label">Street Address</label>
-                                    <input asp-for="address" class="form-control" placeholder="W 123 Street" type="text" value="" id="address" />
+                                <div class="form-group" id="address">
+                                    <label asp-for="Address" class="control-label">Street Address</label>
+                                    <input asp-for="Address" class="form-control" placeholder="W 123 Street" type="text" value="" id="address" />
                                     <span class="help-inline">  Street Name and/or apartment number</span>
-                                    <span asp-validation-for="address" class="text-danger"></span>
+                                    <span asp-validation-for="Address" class="text-danger"></span>
                                 </div>
-                                <div class="form-group" id="card-number-field">
-                                    <label asp-for="zip" class="control-label">Zip Code</label>
-                                    <input asp-for="zip" class="form-control" type="text" value="" id="zip" />
-                                    <span asp-validation-for="zip" class="text-danger"></span>
+                                <div class="form-group" id="zip">
+                                    <label asp-for="Zip" class="control-label">Zip Code</label>
+                                    <input asp-for="Zip" class="form-control" type="text" value="" id="zip" />
+                                    <span asp-validation-for="Zip" class="text-danger"></span>
                                 </div>
-                                <div class="form-group CVV">
-                                    <label asp-for="city" class="control-label">City</label>
-                                    <input asp-for="city" class="form-control" id="cvv" />
-                                    <span asp-validation-for="city" class="text-danger"></span>
+                                <div class="form-group" id="city">
+                                    <label asp-for="City" class="control-label">City</label>
+                                    <input asp-for="City" class="form-control" id="city" />
+                                    <span asp-validation-for="City" class="text-danger"></span>
                                 </div>
 
                                 <div class="form-group" id="country">
-                                    <label asp-for="country" class="control-label">Country</label>
-                                    <select asp-for="country">
+                                    <label asp-for="Country" class="control-label">Country</label>
+                                    <select asp-for="Country">
                                         <option value=""></option>
                                         <option value="AR">Argentina</option>
                                         <option value="AU">Australia</option>
@@ -175,7 +175,7 @@
                                         <option value="UZ">Uzbekistan</option>
                                         <option value="VN">Vietnam</option>
                                     </select>
-                                    <span asp-validation-for="country" class="text-danger"></span>
+                                    <span asp-validation-for="Country" class="text-danger"></span>
                                 </div>
                                 <div class="form-group" id="pay-now">
                                     <input type="submit" value="Confirm" class="btn btn-primary" />
@@ -190,6 +190,7 @@
 
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="col-sm">
@@ -201,5 +202,9 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/jquery.payform.min.js" charset="utf-8"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>

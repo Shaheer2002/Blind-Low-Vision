@@ -21,24 +21,24 @@ namespace AuthSystem.Models
 
         [Required(ErrorMessage = "Enter Email")]
         [Display(Name = " Email:")]
-        public string email { get; set; }
+        public string Email { get; set; }
 
 
         [Required(ErrorMessage = "Enter Address")]
         [Display(Name = " Address :")]
-        public string address { get; set; }
+        public string Address { get; set; }
 
 
         [Required(ErrorMessage = "Enter Zip")]
         [Display(Name = " Zip :")]
-        public string zip { get; set; }
+        public string Zip { get; set; }
 
         [Required(ErrorMessage = "Enter City")]
         [Display(Name = " City :")]
-        public string city { get; set; }
+        public string City { get; set; }
 
         [Required(ErrorMessage = "Enter Country")]
         [Display(Name = " Country :")]
-        public string country { get; set; }
+        public string Country { get; set; }
     }
 }
