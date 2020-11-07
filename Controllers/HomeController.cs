@@ -58,16 +58,16 @@ namespace AuthSystem.Controllers
 
                using (SqlConnection sqlconn = new SqlConnection(connection))
                 {
-                 string sqlquery = "insert into [dbo].[DonationTable](Owner,Amount,CardNumber,CVV,ExpirationDate) values ('" + ur.Owner + "','" + ur.Amount + "','" + ur.CardNumber + "','" + ur.CVV + "','"+ ur.ExpirationDate + "')";
+                 string sqlquery = "insert into [dbo].[DonationTable1](Owner,Amount,CardNumber,CVV,ExpirationDate) values ('" + ur.Owner + "','" + ur.Amount + "','" + ur.CardNumber + "','" + ur.CVV + "','"+ ur.ExpirationDate + "')";
                  using (SqlCommand sqlcomm = new SqlCommand(sqlquery,sqlconn))
                    {
                     sqlconn.Open();
                     sqlcomm.ExecuteNonQuery();
                     ViewData["Message"] = "The New Owner " + ur.Owner + " is saved successfully..! ";
-                    return View(ur);
+                    
                    }
                 }
-            
+            return View(ur);
         }
 
 

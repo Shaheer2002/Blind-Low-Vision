@@ -9,7 +9,8 @@ namespace AuthSystem.Models
     public class Donation
     {
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "Enter Name")]
         [Display (Name = " Name :")]
         public string Owner { get; set; }
