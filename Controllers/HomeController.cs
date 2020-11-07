@@ -78,7 +78,7 @@ namespace AuthSystem.Controllers
 
             using (SqlConnection sqlconn = new SqlConnection(connection))
             {
-                string sqlquery = "insert into [dbo].[DonationTable1](Name,Program,Email,Address,Zip,City,Country) values ('" + op.Name + "','" + op.Program + "','" + op.Email + "','" + op.Address + "','" + op.Zip + "','" + op.City + "','" + op.Country + "')";
+                string sqlquery = "insert into [dbo].[ChallengeTable](Name,Program,Email,Address,Zip,City,Country) values ('" + op.Name + "','" + op.Program + "','" + op.Email + "','" + op.Address + "','" + op.Zip + "','" + op.City + "','" + op.Country + "')";
                 using (SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn))
                 {
                     sqlconn.Open();
