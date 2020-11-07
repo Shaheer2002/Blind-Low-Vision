@@ -10,6 +10,7 @@ namespace AuthSystem.Models
     {
         [Key]
         public int ID { get; set; }
+
         [Required(ErrorMessage = "Enter Name")]
         [Display(Name = " Name :")]
         public string Name { get; set; }

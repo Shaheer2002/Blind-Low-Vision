@@ -70,6 +70,26 @@ namespace AuthSystem.Controllers
             return View(ur);
         }
 
+        [HttpPost]
+        public IActionResult Challenge(Challenge op)
+        {
+            string connection = "Server=tpisql01.avcol.school.nz ; Database=MVCAuthDB-Shaheer; Trusted_Connection=True;  MultipleActiveResultSets=true";
+
+
+            using (SqlConnection sqlconn = new SqlConnection(connection))
+            {
+                string sqlquery = "insert into [dbo].[DonationTable1](Name,Program,Email,Address,Zip,City,Country) values ('" + op.Name + "','" + op.Program + "','" + op.Email + "','" + op.Address + "','" + op.Zip + "','" + op.City + "','" + op.Country + "')";
+                using (SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn))
+                {
+                    sqlconn.Open();
+                    sqlcomm.ExecuteNonQuery();
+                    ViewData["Message"] = "The New Owner " + op.Name + " is saved successfully..! ";
+
+                }
+            }
+            return View(op);
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
