@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Donation>
+@{
+    ViewData["Title"] = "test";
+}
+
+<h1>test</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Amount</td>
+        </tr>
+    }
+</table>
+

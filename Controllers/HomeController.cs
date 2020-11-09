@@ -9,6 +9,7 @@ using AuthSystem.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Data.SqlClient;
 using Microsoft.Data;
+using AuthSystem.Data;
 
 namespace AuthSystem.Controllers
 {
@@ -58,7 +59,7 @@ namespace AuthSystem.Controllers
 
                using (SqlConnection sqlconn = new SqlConnection(connection))
                 {
-                 string sqlquery = "insert into [dbo].[DonationTable1](Owner,Amount,CardNumber,CVV,ExpirationDate) values ('" + ur.Owner + "','" + ur.Amount + "','" + ur.CardNumber + "','" + ur.CVV + "','"+ ur.ExpirationDate + "')";
+                 string sqlquery = "insert into [dbo].[DonationTable](Owner,Amount,CardNumber,CVV,ExpirationDate) values ('" + ur.Owner + "','" + ur.Amount + "','" + ur.CardNumber + "','" + ur.CVV + "','"+ ur.ExpirationDate + "')";
                  using (SqlCommand sqlcomm = new SqlCommand(sqlquery,sqlconn))
                    {
                     sqlconn.Open();
@@ -75,6 +76,11 @@ namespace AuthSystem.Controllers
         {
             string connection = "Server=tpisql01.avcol.school.nz ; Database=MVCAuthDB-Shaheer; Trusted_Connection=True;  MultipleActiveResultSets=true";
 
+            
+
+            var students = context.Students
+                              .FromSql("Select * from Students where Name = 'Bill'")
+                              .ToList();
 
             using (SqlConnection sqlconn = new SqlConnection(connection))
             {
